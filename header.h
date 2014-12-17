@@ -21,17 +21,43 @@
 #include <fstream>
 
 
-#include "../opencv/include/opencv/cv.h"
+#include "../opencv/include/opencv/cv.h" 
 #include "../opencv/include/opencv/highgui.h"
 #include "../opencv/include/opencv/cxcore.h"
 
+//#ifdef DEBUG
+////#define DEBUG
+//#pragma comment(lib, "../opencv/lib/opencv_core248d.lib")
+//#pragma comment(lib, "../opencv/lib/opencv_objdetect248d.lib")
+//#pragma comment(lib, "../opencv/lib/opencv_highgui248d.lib")
+//#pragma comment(lib, "../opencv/lib/opencv_imgproc248d.lib")
+//
+//#endif
 //Debug
+//#pragma comment(lib, "../opencv/lib/opencv_core248d.lib")
+//#pragma comment(lib, "../opencv/lib/opencv_objdetect248d.lib")
+//#pragma comment(lib, "../opencv/lib/opencv_highgui248d.lib")
+//#pragma comment(lib, "../opencv/lib/opencv_imgproc248d.lib")
+
+//Release
+//#pragma comment(lib, "../opencv/lib/opencv_core248.lib")
+//#pragma comment(lib, "../opencv/lib/opencv_objdetect248.lib")
+//#pragma comment(lib, "../opencv/lib/opencv_highgui248.lib")
+//#pragma comment(lib, "../opencv/lib/opencv_imgproc248.lib")
+
+#endif
+
+#ifdef DEBUG
+
 #pragma comment(lib, "../opencv/lib/opencv_core248d.lib")
 #pragma comment(lib, "../opencv/lib/opencv_objdetect248d.lib")
 #pragma comment(lib, "../opencv/lib/opencv_highgui248d.lib")
 #pragma comment(lib, "../opencv/lib/opencv_imgproc248d.lib")
 
-//Release
+#endif
+
+#ifndef DEBUG
+
 #pragma comment(lib, "../opencv/lib/opencv_core248.lib")
 #pragma comment(lib, "../opencv/lib/opencv_objdetect248.lib")
 #pragma comment(lib, "../opencv/lib/opencv_highgui248.lib")
